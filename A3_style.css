@@ -1,0 +1,48 @@
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color:yellow;
+    text-decoration: underline;
+}
+
+h1 {
+    color: rgb(20, 14, 1);
+    background-color: rgb(180, 180, 145);
+}
+
+h2 {
+    color: rgb(20, 14, 1);
+    background-color: rgb(180, 180, 145);
+}
+
+h3 {
+    color: rgb(20, 14, 1);
+    background-color: rgb(180, 180, 145);
+}
+
+header {
+    background-color: rgb(212, 212, 184);
+}
+
+nav {
+    background-color: rgb(212, 212, 184);
+}
+
+.sp_1{
+    color: rgb(255, 0, 0);
+}
+
+.div1 {
+    color: rgb(255, 0, 0);
+}
+
+main {
+    background-color: rgb(212, 212, 184);
+}
