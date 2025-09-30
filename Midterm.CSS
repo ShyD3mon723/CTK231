@@ -1,0 +1,218 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif, Georgia, 'Times New Roman', Times, serif;
+    background-color: gray;
+}
+
+#Wrapper 
+{
+    margin: 1em auto;
+    width: 960px;
+    border: 5px solid #1335ae;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 12px;
+}
+
+header 
+{
+    grid-column: span 12;
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+
+}
+
+h1 
+{ 
+    margin-left: 24px;
+    font-weight: normal;
+    font-style: italic; 
+}
+
+h1 a 
+{
+    text-decoration: none;
+    color: skyblue;
+}
+
+h1 a:hover 
+{
+    color: white;
+}
+
+nav 
+{
+    grid-column: span 12;
+    font-weight: bold;
+}
+
+nav ul 
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li 
+{
+    display: inline-block;
+}
+
+nav li a 
+{
+    display: block;
+    width: 225px;
+    height: 24px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    text-decoration: none;
+    color: skyblue;
+    border-right: solid 4px #1335ae;
+    border-bottom: solid 4px #1335ae;
+    border-top: solid 4px #1335ae;
+    background-image: linear-gradient(to bottom, #136ef6, #165fe4, #1651d2, #1543c0, #1335ae);
+}
+
+nav li a:hover 
+{
+    color: white
+}
+
+aside 
+{
+    grid-column: span 4;
+    background-color: skyblue;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: justify;
+}
+
+h2 
+{
+    color: #1335ae;
+    border-bottom: solid 4px #1335ae;
+    font-weight: normal;
+    padding-bottom: 6px;
+    margin-right:1em;
+}
+
+main
+{
+    margin-right:1em;
+    grid-column: span 8;
+    margin: 12px;
+}
+
+main a 
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+main a:hover
+{
+    color: darkred;
+}
+
+#float_left 
+{
+    float: left;
+    border: solid 4px #1335ae;
+    margin-right: 12px;
+}
+
+#Thebear
+{
+    border: 5px solid #1335ae;
+}
+
+img 
+{
+    float: right; 
+    margin-right: 0px;
+}
+
+.Gallerytext 
+{
+    background-color: white;
+    text-align: left;
+}
+
+.GalleryText img
+{
+Width: 100%;
+margin-bottom: 12px;
+}
+
+#Carmy 
+{
+    grid-column: span 4;
+    margin-left: 12px;
+}
+
+#Carmy a 
+{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Carmy a:hover 
+{
+    color: darkred
+}
+
+#Sydney 
+{
+    grid-column: span 4;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+#Sydney a 
+{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Sydney a:hover
+{
+    color: darkred;
+}
+
+#Richie 
+{
+    grid-column: span 4;
+    margin-right: 12px;
+    float: right;
+}
+
+#Richie a
+{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Richie a:hover 
+{
+    color: darkred
+}
+
+footer 
+{
+    grid-column: span 12;
+    background-color: red;
+    border-top: solid 5px #1335ae;
+    padding: 12px;
+}
+
+footer a
+{
+    float:left;
+}
