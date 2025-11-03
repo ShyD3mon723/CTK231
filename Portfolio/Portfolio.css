@@ -1,0 +1,87 @@
+body {
+  background-color: #999999;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+header {
+  grid-column: span 12;
+  background-color: #FF73F1;
+  padding: 10px;
+}
+
+#floatL {
+  float:left;
+}
+
+nav 
+{
+  grid-column: span 12;
+  font-weight: bold;
+  float: right;
+}
+
+nav ul 
+{
+  padding: 0;
+}
+
+nav li 
+{
+  display: inline-block;
+}
+
+nav li a 
+{
+  display: block;
+  width: 225px;
+  height: 24px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+nav li a:hover 
+{
+  text-decoration: underline;
+  text-decoration-color: #FFEA00;
+}
+
+main {
+  grid-column: span 12;
+}
+
+footer {
+  grid-column: span 12;
+  background-color: #FF73F1;
+  padding: 10px;
+}
+
+#floatR{
+  float: right;
+  padding:20px;
+}
+
+#floatRB{
+  float: right;
+}
+
+/* style for dummy columns, delete and replace with your own CSS */
+.dummycolumn {
+  background-color: rgba(255,0,0,.25);
+  grid-column: span 1;
+}
