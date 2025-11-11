@@ -17,6 +17,8 @@ header {
   grid-column: span 12;
   background-color: #FF73F1;
   padding: 10px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
 }
 
 #floatL {
@@ -49,16 +51,18 @@ nav li a
   padding-bottom: 6px;
   padding-left: 12px;
   text-decoration: underline;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Kings", cursive;
   font-size: 36px;
   font-weight: bold;
   color: black;
+  text-shadow: 5px 5px 5px #ffffff;
 }
 
 nav li a:hover 
 {
   text-decoration: underline;
   text-decoration-color: #FFEA00;
+  transition: text-decoration-color 1.0s, width 2.0s, color 2.0s;
 }
 
 main {
@@ -69,19 +73,20 @@ footer {
   grid-column: span 12;
   background-color: #FF73F1;
   padding: 10px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 200px;
 }
 
-#floatR{
-  float: right;
-  padding:20px;
+footer a {
+  color: black;
+  font-size: 75px;
+  transition: all 1s;
+  padding-right: 50px;
+  padding-left: 50px;
+  text-shadow: 5px 5px 5px #ffffff;
 }
 
-#floatRB{
-  float: right;
-}
-
-/* style for dummy columns, delete and replace with your own CSS */
-.dummycolumn {
-  background-color: rgba(255,0,0,.25);
-  grid-column: span 1;
+footer a:hover {
+  color: #FFEA00;
+  font-size: 100px;
 }
