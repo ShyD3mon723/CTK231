@@ -7,11 +7,21 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kings&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/
+	@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/
+	@fancyapps/ui@6.1/dist/carousel/carousel.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/
+	@fancyapps/ui@6.0/dist/carousel/carousel.arrows.css" />
+
 	<link href="Portfolio.css" rel="stylesheet" type="text/css">
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.umd.js"></script>
 </head>
 <body>
 	<div id="wrapper">
-		<!-- These dummy columns are just to show the grid columns, replace with your HTML -->
 		<header>
 			<img id="floatL" src="My_Logo 1.png" alt="Small Logo">
 				<nav>
@@ -25,27 +35,35 @@
 		</header>
 
 		<main>
-			<img id="tall" src="6_1Portraits_Cantu 1.png" alt="Artwork">
-			<img id="wide" src="6_Eggproject_Cantu 1.png" alt="Artwork">
-			<img id="wide" src="6_Manmade_Cantu 1.png" alt="Artwork">
-			<img id="tall" src="6_Shadows_cantu 1.png" alt="Artwork">
-			<img id="tall" src="DSC_2774 1.png" alt="Artwork">
-			<img id="wide" src="DSC_2928 1.png" alt="Artwork">
-			<img id="wide" src="NMS_0571 1.png" alt="Artwork">
-			<img id="wide" src="PWL Angel 1.png" alt="Artwork">
-			<img id="wide" src="Series1_Cantu_2 copy 1.png" alt="Artwork">
-			<img id="tall" src="Series2_Cantu_2 copy 1.png" alt="Artwork">
-			<img id="tall" src="Series4_Cantu_2 copy 1.png" alt="Artwork">
-			<img id="tall" src="Cantu_Final 4 1.png" alt="Artwork">
-			<img id="tall" src="Cantu_Final 10 1.png" alt="Artwork">
-			<img id="wide" src="Buisness_card_Cantu 1.png" alt="Artwork">
-			<img id="tall" src="Cantu Light trail (4 of 5) 1.png" alt="Artwork">
-			<img id="wide" src="Cantu_Spring_Shots (4 of 5) 1.png" alt="Artwork">
-			<img id="tall" src="Alex_2 1.png" alt="Artwork">
-			<img id="wide" src="Alex Bright-3 1.png" alt="Artwork">
-			<audio controls autoplay >
-  			<source src="Narritive_Cantu_mixdown.wav" type="audio/wav">
-			</audio>
+		<div class="f-carousel" id="myCarousel" >
+			<div class="f-carousel__slide"><img  src="6_1Portraits_Cantu 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="6_Eggproject_Cantu 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="6_Manmade_Cantu 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="6_Shadows_cantu 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="DSC_2774 1.png" alt="Artwork"></div>
+		</div>
+		<div class="f-carousel2" id="myCarousel2" >
+			<div class="f-carousel__slide"><img  src="DSC_2928 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="NMS_0571 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="PWL Angel 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Series1_Cantu_2 copy 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Series2_Cantu_2 copy 1.png" alt="Artwork"></div>
+		</div>
+		<div class="f-carousel3" id="myCarousel3" >
+			<div class="f-carousel__slide"><img  src="Series4_Cantu_2 copy 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Cantu_Final 4 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Cantu_Final 10 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Buisness_card_Cantu 1.png" alt="Artwork"></div>	
+		</div>
+		<div class="f-carousel4" id="myCarousel4" >
+			<div class="f-carousel__slide"><img  src="Cantu Light trail (4 of 5) 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Cantu_Spring_Shots (4 of 5) 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Alex_2 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><img  src="Alex Bright-3 1.png" alt="Artwork"></div>
+			<div class="f-carousel__slide"><audio controls autoplay >
+  			<source src="Untitled video.mp4" type="audio/mp4">
+			</audio></div>
+		</div>
 		</main>
 
 		<footer>
@@ -53,5 +71,29 @@
 		</footer>
 
 	</div>
+	<script>   
+		Fancybox.bind("[data-fancybox]", {});
+		const container = document.getElementById("myCarousel");
+		const options = { infinite: false };
+		Carousel(container, options, { Arrows }).init();
+
+		Fancybox.bind("[data-fancybox]", {});
+		const container2 = document.getElementById
+		("myCarousel2");
+		const options2 = { infinite: false };
+		Carousel(container2, options2, { Arrows }).init();
+
+		Fancybox.bind("[data-fancybox]", {});
+		const container3 = document.getElementById
+		("myCarousel3");
+		const options3 = { infinite: false };
+		Carousel(container3, options3, { Arrows }).init();
+
+		Fancybox.bind("[data-fancybox]", {});
+		const container4 = document.getElementById
+		("myCarousel4");
+		const options4 = { infinite: false };
+		Carousel(container4, options4, { Arrows }).init();
+	</script>
 </body>
 </html>
